@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_webrtc_fixed_v0_12_0/flutter_webrtc.dart';
+import 'package:flutter_webrtc_fixed_v0_12_0/flutter_webrtc_fixed_v0_12_0.dart';
 
 void main() {
   runApp(const MyApp());
