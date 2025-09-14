@@ -266,7 +266,7 @@
       "languageVersion": "3.3"
     },
     {
-      "name": "flutter_webrtc_fixed_example",
+      "name": "flutter_webrtc_fixed_v0_12_0_example",
       "rootUri": "../",
       "packageUri": "lib/",
       "languageVersion": "3.3"

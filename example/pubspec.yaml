@@ -1,6 +1,7 @@
-name: flutter_webrtc_fixed_example
-description: Example app demonstrating Flutter WebRTC Fixed v0.12.0 capabilities
-version: 1.0.0+1
+name: flutter_webrtc_fixed_v0_12_0_example
+description: Demonstrates how to use the flutter_webrtc_fixed_v0_12_0 plugin.
+version: 0.1.0
+publish_to: "none" # Remove this line if you wish to publish this package
 
 environment:
   sdk: ">=3.3.0 <4.0.0"

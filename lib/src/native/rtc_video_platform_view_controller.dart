@@ -181,6 +181,7 @@ class RTCVideoPlatformViewController extends ValueNotifier<RTCVideoValue>
     return true;
   }
 
+  @override
   // TODO(flutter_webrtc): implement videoValue
   RTCVideoValue get videoValue => throw UnimplementedError();
 }

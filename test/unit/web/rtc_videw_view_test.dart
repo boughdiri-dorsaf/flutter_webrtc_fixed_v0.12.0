@@ -3,7 +3,7 @@ library;
 
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:flutter_webrtc_fixed_v0_12_0/flutter_webrtc_fixed_v0_12_0.dart';
+import 'package:flutter_webrtc_fixed_v0_12_0/flutter_webrtc.dart';
 
 void main() {
   // TODO(wer-mathurin): should revisit after this bug is resolved, https://github.com/flutter/flutter/issues/66045.

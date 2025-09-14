@@ -330,6 +330,7 @@ class RTCVideoRenderer extends ValueNotifier<RTCVideoValue>
   @override
   Function? onFirstFrameRendered;
 
+  @override
   // TODO(flutter_webrtc): implement videoValue
   RTCVideoValue get videoValue => throw UnimplementedError();
 }

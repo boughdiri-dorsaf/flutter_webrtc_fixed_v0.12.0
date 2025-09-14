@@ -1,11 +1,11 @@
 {
   "roots": [
-    "flutter_webrtc_fixed_example"
+    "flutter_webrtc_fixed_v0_12_0_example"
   ],
   "packages": [
     {
-      "name": "flutter_webrtc_fixed_example",
-      "version": "1.0.0+1",
+      "name": "flutter_webrtc_fixed_v0_12_0_example",
+      "version": "0.1.0",
       "dependencies": [
         "cupertino_icons",
         "flutter",

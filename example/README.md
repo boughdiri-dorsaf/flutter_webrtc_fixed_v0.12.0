@@ -1,70 +1,81 @@
-# Flutter WebRTC Fixed Example
+# flutter_webrtc_fixed_v0_12_0_example
 
-This example demonstrates how to use the `flutter_webrtc_fixed_v0_12_0` package to create a real-time video communication app.
+A comprehensive example app demonstrating the Flutter WebRTC Fixed v0.12.0 plugin.
 
-## Features Demonstrated
+## Features
 
-- 🎥 **Video Capture**: Access device camera and microphone
-- 🔗 **Peer Connection**: Create WebRTC peer connections
-- 📡 **Media Streaming**: Send and receive audio/video streams
-- 🎛️ **Controls**: Mute/unmute audio, enable/disable video
-- 📱 **Cross-Platform**: Works on iOS, Android, Web, macOS, Windows, and Linux
+- **Video Capture**: Local video capture and rendering
+- **Peer Connection**: WebRTC peer connection management
+- **Audio/Video Controls**: Start call and hang up functionality
+- **Cross-Platform**: Works on iOS, Android, and Web
+- **Modern UI**: Material Design 3 interface
 
 ## Getting Started
 
-1. **Install Dependencies**:
+### Prerequisites
+
+- Flutter SDK (>=1.22.0)
+- Dart SDK (>=3.3.0)
+- Android Studio / Xcode (for mobile development)
+- Chrome (for web development)
+
+### Running the Example
+
+1. **Get dependencies:**
    ```bash
-   cd example
    flutter pub get
    ```
 
-2. **Run the Example**:
+2. **Run on your preferred platform:**
    ```bash
-   flutter run
+   # Android
+   flutter run -d android
+   
+   # iOS
+   flutter run -d ios
+   
+   # Web
+   flutter run -d chrome
    ```
+
+### Permissions
+
+The app requires the following permissions:
+
+**Android:**
+- Camera
+- Microphone
+- Internet
+- Network State
+
+**iOS:**
+- Camera Usage
+- Microphone Usage
 
 ## Usage
 
-1. **Create Connection**: Tap "Create Connection" to initialize the peer connection
-2. **Start Camera**: Tap "Start Camera" to access your device's camera and microphone
-3. **Create Offer/Answer**: Use these buttons to simulate the WebRTC signaling process
-4. **Control Media**: Use the mute and video toggle buttons to control your media streams
+1. **Start Call**: Tap the "Start Call" button to begin video capture
+2. **Grant Permissions**: Allow camera and microphone access when prompted
+3. **View Local Video**: Your camera feed will appear in the left panel
+4. **Hang Up**: Tap "Hang Up" to end the call and stop video capture
 
-## Platform Setup
+## Architecture
 
-### Android
-The example includes the necessary permissions in `android/app/src/main/AndroidManifest.xml`:
-- Camera permission
-- Microphone permission
-- Network access
+The example demonstrates:
 
-### iOS
-The example includes the necessary usage descriptions in `ios/Runner/Info.plist`:
-- Camera usage description
-- Microphone usage description
+- **RTCVideoRenderer**: For video rendering
+- **RTCPeerConnection**: For peer-to-peer connections
+- **MediaStream**: For audio/video streams
+- **Navigator.mediaDevices**: For device access
 
-## Code Structure
+## Notes
 
-- `main.dart`: Main application with WebRTC functionality
-- `pubspec.yaml`: Dependencies and project configuration
-- Platform-specific files for Android and iOS
-
-## WebRTC Concepts Demonstrated
-
-- **MediaStream**: Capturing audio and video from device
-- **RTCPeerConnection**: Managing peer-to-peer connections
-- **RTCVideoRenderer**: Displaying video streams
-- **SDP (Session Description Protocol)**: Negotiating media capabilities
-- **ICE (Interactive Connectivity Establishment)**: Finding network paths
+- This is a local demo - for real peer-to-peer calls, you would need signaling
+- The app shows local video capture and rendering capabilities
+- WebRTC functionality works across all supported platforms
 
 ## Troubleshooting
 
-- Ensure camera and microphone permissions are granted
-- Check that your device has a working camera and microphone
-- For testing, you can run the app on two different devices or use a WebRTC testing service
-
-## Learn More
-
-- [WebRTC Documentation](https://webrtc.org/)
-- [Flutter WebRTC Fixed Package](https://pub.dev/packages/flutter_webrtc_fixed_v0_12_0)
-- [Flutter Documentation](https://flutter.dev/docs)
+- Ensure you have granted camera and microphone permissions
+- For Android, make sure you're using a physical device or emulator with camera support
+- For iOS, ensure you're using a physical device (simulator doesn't support camera)

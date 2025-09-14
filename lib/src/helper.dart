@@ -1,6 +1,6 @@
 import 'package:flutter/foundation.dart';
 
-import '../flutter_webrtc_fixed_v0_12_0.dart';
+import '../flutter_webrtc.dart';
 import 'native/audio_management.dart';
 
 class Helper {
