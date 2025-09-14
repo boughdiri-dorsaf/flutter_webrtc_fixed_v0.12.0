@@ -214,7 +214,7 @@ android {
 <summary><strong>📡 Basic WebRTC Setup</strong></summary>
 
 ```dart
-import 'package:flutter_webrtc_fixed_v0_12_0/flutter_webrtc.dart';
+import 'package:flutter_webrtc_fixed_v0_12_0/flutter_webrtc_fixed_v0_12_0.dart';
 
 // Create RTCPeerConnection
 final configuration = {
