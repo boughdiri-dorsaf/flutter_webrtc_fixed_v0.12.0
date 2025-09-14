@@ -239,6 +239,24 @@ localStream.getTracks().forEach((track) {
 </details>
 
 <details>
+<summary><strong>📱 Complete Example App</strong></summary>
+
+Check out the [complete example app](example/) that demonstrates:
+- Video capture and rendering
+- Peer connection management
+- Audio/video controls
+- Cross-platform compatibility
+
+To run the example:
+```bash
+cd example
+flutter pub get
+flutter run
+```
+
+</details>
+
+<details>
 <summary><strong>🎥 Video Rendering</strong></summary>
 
 ```dart
