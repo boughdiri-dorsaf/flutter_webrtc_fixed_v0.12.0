@@ -1,10 +1,10 @@
 {
   "roots": [
-    "flutter_webrtc"
+    "flutter_webrtc_fixed_v0_12_0"
   ],
   "packages": [
     {
-      "name": "flutter_webrtc",
+      "name": "flutter_webrtc_fixed_v0_12_0",
       "version": "0.12.0",
       "dependencies": [
         "collection",

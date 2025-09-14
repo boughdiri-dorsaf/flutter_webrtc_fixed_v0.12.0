@@ -1,8 +1,28 @@
-# Flutter WebRTC Fixed v0.12.0
+<div align="center">
 
-[![pub package](https://img.shields.io/pub/v/flutter_webrtc_fixed_v0.12.0.svg)](https://pub.dartlang.org/packages/flutter_webrtc_fixed_v0.12.0) [![GitHub](https://img.shields.io/github/stars/boughdiri-dorsaf/flutter_webrtc_fixed_v0.12.0?style=social)](https://github.com/boughdiri-dorsaf/flutter_webrtc_fixed_v0.12.0)
+# 🚀 Flutter WebRTC Fixed v0.12.0
 
-WebRTC plugin for Flutter Mobile/Desktop/Web. This is a fixed and improved version of the original flutter_webrtc package with additional bug fixes and optimizations for production use.
+[![pub package](https://img.shields.io/pub/v/flutter_webrtc_fixed_v0_12_0.svg?style=for-the-badge&logo=dart&logoColor=white)](https://pub.dartlang.org/packages/flutter_webrtc_fixed_v0_12_0)
+[![GitHub stars](https://img.shields.io/github/stars/boughdiri-dorsaf/flutter_webrtc_fixed_v0.12.0?style=for-the-badge&logo=github&logoColor=white)](https://github.com/boughdiri-dorsaf/flutter_webrtc_fixed_v0.12.0)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg?style=for-the-badge&logo=opensourceinitiative&logoColor=white)](LICENSE)
+[![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)](https://flutter.dev)
+[![WebRTC](https://img.shields.io/badge/WebRTC-333333?style=for-the-badge&logo=webrtc&logoColor=white)](https://webrtc.org)
+
+**🎯 Production-Ready WebRTC Plugin for Flutter**
+
+*Cross-platform real-time communication with enhanced stability and performance*
+
+</div>
+
+---
+
+## ✨ What's New
+
+🎉 **This is a fixed and improved version** of the original `flutter_webrtc` package with:
+- 🔧 **Enhanced Stability** - Additional bug fixes and optimizations
+- 🚀 **Production Ready** - Tested and optimized for production use
+- 📱 **Cross-Platform** - iOS, Android, Web, macOS, Windows, Linux support
+- 🛠️ **Easy Integration** - Simple API with comprehensive documentation
 
 </br>
 <p align="center">
@@ -25,40 +45,75 @@ Enterprise Grade APIs for Feeds, Chat, & Video. <a href="https://getstream.io/vi
 
 ## 📦 Installation
 
-### From pub.dev (Recommended)
+### 🎯 Quick Start (Recommended)
+
+Add this to your package's `pubspec.yaml` file:
+
 ```yaml
 dependencies:
-  flutter_webrtc_fixed_v0.12.0: ^0.12.0
+  flutter_webrtc_fixed_v0_12_0: ^0.12.0
 ```
 
-### From GitHub
+Then run:
+```bash
+flutter pub get
+```
+
+### 🔗 Alternative Installation Methods
+
+<details>
+<summary><strong>📥 From GitHub Repository</strong></summary>
+
 ```yaml
 dependencies:
-  flutter_webrtc_fixed_v0.12.0:
+  flutter_webrtc_fixed_v0_12_0:
     git:
       url: https://github.com/boughdiri-dorsaf/flutter_webrtc_fixed_v0.12.0.git
       ref: main
 ```
 
-### From Local Path
+</details>
+
+<details>
+<summary><strong>📁 From Local Path</strong></summary>
+
 ```yaml
 dependencies:
-  flutter_webrtc_fixed_v0.12.0:
-    path: ./flutter_webrtc_fixed_v0.12.0
+  flutter_webrtc_fixed_v0_12_0:
+    path: ./flutter_webrtc_fixed_v0_12_0
 ```
+
+</details>
 
 ## 🚀 Features
 
-| Feature | Android | iOS | [Web](https://flutter.dev/web) | macOS | Windows | Linux | [Embedded](https://github.com/sony/flutter-elinux) | [Fuchsia](https://fuchsia.dev/) |
-| :-------------: | :-------------:| :-----: | :-----: | :-----: | :-----: | :-----: | :-----: | :-----: |
-| Audio/Video | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | |
-| Data Channel | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | |
-| Screen Capture | :heavy_check_mark: | [:heavy_check_mark:(*)](https://github.com/flutter-webrtc/flutter-webrtc/wiki/iOS-Screen-Sharing) | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | |
-| Unified-Plan | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | |
-| Simulcast | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | |
-| MediaRecorder | :warning: | :warning: | :heavy_check_mark: | | | | | |
-| End to End Encryption | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | |
-| Insertable Streams | | | | | | | | |
+<div align="center">
+
+### 🌟 Core Capabilities
+
+| 🎯 Feature | 🤖 Android | 🍎 iOS | 🌐 Web | 💻 macOS | 🪟 Windows | 🐧 Linux | 📱 Embedded |
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **🎥 Audio/Video** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| **📡 Data Channel** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| **📺 Screen Capture** | ✅ | ✅* | ✅ | ✅ | ✅ | ✅ | ✅ |
+| **🔄 Unified-Plan** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| **📊 Simulcast** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| **🎬 MediaRecorder** | ⚠️ | ⚠️ | ✅ | ❌ | ❌ | ❌ | ❌ |
+| **🔐 End-to-End Encryption** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| **🔌 Insertable Streams** | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
+
+*<sub>iOS Screen Sharing requires additional setup - [See Guide](https://github.com/flutter-webrtc/flutter-webrtc/wiki/iOS-Screen-Sharing)</sub>*
+
+</div>
+
+### 🎨 Key Highlights
+
+- 🎯 **Cross-Platform Support** - Works seamlessly across all major platforms
+- 🔧 **Production Ready** - Battle-tested in real-world applications
+- 🚀 **High Performance** - Optimized for low latency and high quality
+- 🛡️ **Secure** - Built-in encryption and security features
+- 📱 **Mobile First** - Designed with mobile devices in mind
+- 🌐 **Web Compatible** - Full support for Flutter Web
 
 Additional platform/OS support from the other community
 
@@ -67,9 +122,12 @@ Additional platform/OS support from the other community
 
 ## 🛠️ Setup
 
-### iOS Setup
+### 📱 iOS Setup
 
-Add the following entry to your `Info.plist` file, located in `<project root>/ios/Runner/Info.plist`:
+<details>
+<summary><strong>🔧 Required Permissions</strong></summary>
+
+Add the following entries to your `Info.plist` file, located in `<project root>/ios/Runner/Info.plist`:
 
 ```xml
 <key>NSCameraUsageDescription</key>
@@ -78,28 +136,35 @@ Add the following entry to your `Info.plist` file, located in `<project root>/io
 <string>$(PRODUCT_NAME) Microphone Usage!</string>
 ```
 
-This entry allows your app to access camera and microphone.
+This allows your app to access camera and microphone.
 
-#### Note for iOS
-The WebRTC.xframework compiled after the m104 release no longer supports iOS arm devices, so need to add the `config.build_settings['ONLY_ACTIVE_ARCH'] = 'YES'` to your ios/Podfile in your project
+</details>
 
-ios/Podfile
+<details>
+<summary><strong>⚠️ Important iOS Configuration</strong></summary>
+
+The WebRTC.xframework compiled after the m104 release no longer supports iOS arm devices. Add this to your `ios/Podfile`:
 
 ```ruby
 post_install do |installer|
   installer.pods_project.targets.each do |target|
     flutter_additional_ios_build_settings(target)
-     target.build_configurations.each do |config|
+    target.build_configurations.each do |config|
       # Workaround for https://github.com/flutter/flutter/issues/64502
       config.build_settings['ONLY_ACTIVE_ARCH'] = 'YES' # <= this line
-     end
+    end
   end
 end
 ```
 
-### Android Setup
+</details>
 
-Ensure the following permission is present in your Android Manifest file, located in `<project root>/android/app/src/main/AndroidManifest.xml`:
+### 🤖 Android Setup
+
+<details>
+<summary><strong>🔧 Required Permissions</strong></summary>
+
+Add these permissions to your `AndroidManifest.xml` file:
 
 ```xml
 <uses-feature android:name="android.hardware.camera" />
@@ -111,16 +176,24 @@ Ensure the following permission is present in your Android Manifest file, locate
 <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
 ```
 
-If you need to use a Bluetooth device, please add:
+</details>
+
+<details>
+<summary><strong>🎧 Bluetooth Support (Optional)</strong></summary>
+
+For Bluetooth device support, add these permissions:
 
 ```xml
 <uses-permission android:name="android.permission.BLUETOOTH" android:maxSdkVersion="30" />
 <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" android:maxSdkVersion="30" />
 ```
 
-The Flutter project template adds it, so it may already be there.
+</details>
 
-Also you will need to set your build settings to Java 8, because official WebRTC jar now uses static methods in `EglBase` interface. Just add this to your app level `build.gradle`:
+<details>
+<summary><strong>⚙️ Java 8 Configuration</strong></summary>
+
+Add this to your app-level `build.gradle`:
 
 ```gradle
 android {
@@ -131,11 +204,17 @@ android {
 }
 ```
 
+</details>
+
 ## 🔧 Usage
 
-### Basic WebRTC Setup
+### 🚀 Quick Start
+
+<details>
+<summary><strong>📡 Basic WebRTC Setup</strong></summary>
+
 ```dart
-import 'package:flutter_webrtc_fixed_v0.12.0/flutter_webrtc.dart';
+import 'package:flutter_webrtc_fixed_v0_12_0/flutter_webrtc.dart';
 
 // Create RTCPeerConnection
 final configuration = {
@@ -157,7 +236,11 @@ localStream.getTracks().forEach((track) {
 });
 ```
 
-### Video Rendering
+</details>
+
+<details>
+<summary><strong>🎥 Video Rendering</strong></summary>
+
 ```dart
 RTCVideoRenderer localRenderer = RTCVideoRenderer();
 RTCVideoRenderer remoteRenderer = RTCVideoRenderer();
@@ -181,31 +264,72 @@ localRenderer.srcObject = localStream;
 remoteRenderer.srcObject = remoteStream;
 ```
 
+</details>
+
 ## 📋 API Reference
 
-### Core Classes
-- `RTCPeerConnection` - WebRTC peer connection
-- `MediaStream` - Audio/video stream
-- `RTCVideoRenderer` - Video rendering widget
-- `RTCDataChannel` - Data channel for messaging
+### 🏗️ Core Classes
 
-### Key Methods
-- `createPeerConnection(configuration)` - Create peer connection
-- `getUserMedia(constraints)` - Get media stream
-- `addTrack(track, stream)` - Add media track
-- `createOffer()` / `createAnswer()` - Create SDP offer/answer
-- `setLocalDescription(description)` - Set local SDP
-- `setRemoteDescription(description)` - Set remote SDP
+| Class | Description |
+|:---|:---|
+| `RTCPeerConnection` | WebRTC peer connection management |
+| `MediaStream` | Audio/video stream handling |
+| `RTCVideoRenderer` | Video rendering widget |
+| `RTCDataChannel` | Data channel for messaging |
+
+### 🔧 Key Methods
+
+| Method | Description |
+|:---|:---|
+| `createPeerConnection(configuration)` | Create peer connection |
+| `getUserMedia(constraints)` | Get media stream |
+| `addTrack(track, stream)` | Add media track |
+| `createOffer()` / `createAnswer()` | Create SDP offer/answer |
+| `setLocalDescription(description)` | Set local SDP |
+| `setRemoteDescription(description)` | Set remote SDP |
 
 ## 🚨 Troubleshooting
 
-### Common Issues
-1. **Camera Permission**: Ensure camera permissions are properly set
-2. **Audio Issues**: Check microphone permissions and audio settings
-3. **Network Issues**: Verify STUN/TURN server configuration
-4. **iOS Build Issues**: Ensure `ONLY_ACTIVE_ARCH` is set to 'YES'
+### 🔍 Common Issues
 
-### Debug Information
+<details>
+<summary><strong>📷 Camera Permission Issues</strong></summary>
+
+- Ensure camera permissions are properly set in platform-specific files
+- Check `Info.plist` (iOS) and `AndroidManifest.xml` (Android)
+- Verify runtime permission requests
+
+</details>
+
+<details>
+<summary><strong>🎤 Audio Issues</strong></summary>
+
+- Check microphone permissions and audio settings
+- Verify audio device selection
+- Test with different audio configurations
+
+</details>
+
+<details>
+<summary><strong>🌐 Network Issues</strong></summary>
+
+- Verify STUN/TURN server configuration
+- Check firewall and NAT settings
+- Test with different network conditions
+
+</details>
+
+<details>
+<summary><strong>🍎 iOS Build Issues</strong></summary>
+
+- Ensure `ONLY_ACTIVE_ARCH` is set to 'YES' in Podfile
+- Check Xcode version compatibility
+- Verify iOS deployment target
+
+</details>
+
+### 🐛 Debug Information
+
 ```dart
 // Check peer connection state
 pc.onConnectionState = (RTCPeerConnectionState state) {
@@ -220,28 +344,51 @@ pc.onIceConnectionState = (RTCIceConnectionState state) {
 
 ## 🤝 Contributing
 
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Test thoroughly
-5. Submit a pull request
+We welcome contributions! Here's how you can help:
+
+1. 🍴 **Fork** the repository
+2. 🌿 **Create** a feature branch (`git checkout -b feature/amazing-feature`)
+3. ✏️ **Make** your changes
+4. 🧪 **Test** thoroughly
+5. 📤 **Submit** a pull request
+
+### 📋 Contribution Guidelines
+
+- Follow the existing code style
+- Add tests for new features
+- Update documentation as needed
+- Ensure all tests pass
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
 
 ## 📞 Support
 
-For support and questions:
-- Create an issue in the [GitHub repository](https://github.com/boughdiri-dorsaf/flutter_webrtc_fixed_v0.12.0/issues)
-- Check the troubleshooting section above
-- Review the API documentation
-- This is a fixed version of the original flutter_webrtc package
+### 🆘 Need Help?
+
+- 🐛 **Report Issues**: [GitHub Issues](https://github.com/boughdiri-dorsaf/flutter_webrtc_fixed_v0.12.0/issues)
+- 📖 **Documentation**: Check the troubleshooting section above
+- 🔍 **API Reference**: Review the comprehensive API documentation
+- 💡 **This is a fixed version** of the original flutter_webrtc package
+
+### 🌟 Show Your Support
+
+If this package helped you, please give it a ⭐ on GitHub!
 
 ## 🔄 Updates
 
-This package is maintained and updated regularly. Check the CHANGELOG.md for version history and updates.
+This package is maintained and updated regularly. Check the [CHANGELOG.md](CHANGELOG.md) for version history and updates.
 
 ---
 
-**Note**: This version is optimized for production use and includes all necessary fixes and improvements.
+<div align="center">
+
+**🎯 Ready to build amazing real-time communication apps?**
+
+[![Get Started](https://img.shields.io/badge/Get%20Started-02569B?style=for-the-badge&logo=flutter&logoColor=white)](https://pub.dartlang.org/packages/flutter_webrtc_fixed_v0_12_0)
+[![View on GitHub](https://img.shields.io/badge/View%20on%20GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/boughdiri-dorsaf/flutter_webrtc_fixed_v0.12.0)
+
+*This version is optimized for production use and includes all necessary fixes and improvements.*
+
+</div>
