@@ -1,11 +1,12 @@
 import 'package:flutter/widgets.dart';
 import 'package:web/web.dart' as web;
+import 'package:dart_webrtc/dart_webrtc.dart';
 
 import 'rtc_video_renderer_wasm.dart';
 
 // WASM-compatible video view implementation
-class RTCVideoView extends StatelessWidget {
-  const RTCVideoView(
+class RTCVideoViewWasm extends StatelessWidget {
+  const RTCVideoViewWasm(
     this._renderer, {
     super.key,
     this.mirror = false,
@@ -14,7 +15,7 @@ class RTCVideoView extends StatelessWidget {
     this.placeholderBuilder,
   });
 
-  final RTCVideoRenderer _renderer;
+  final RTCVideoRendererWasm _renderer;
   final bool mirror;
   final FilterQuality filterQuality;
   final RTCVideoViewObjectFit objectFit;
@@ -31,7 +32,8 @@ class RTCVideoView extends StatelessWidget {
 
   Widget _buildVideoElement(BoxConstraints constraints) {
     if (_renderer.srcObject == null) {
-      return placeholderBuilder?.call(context) ?? const SizedBox.shrink();
+      return placeholderBuilder?.call(context) ?? 
+             const SizedBox.shrink();
     }
 
     return SizedBox(
@@ -55,7 +57,7 @@ class _WebRTCVideoElement extends StatefulWidget {
     required this.objectFit,
   });
 
-  final RTCVideoRenderer renderer;
+  final RTCVideoRendererWasm renderer;
   final bool mirror;
   final FilterQuality filterQuality;
   final RTCVideoViewObjectFit objectFit;
@@ -94,13 +96,13 @@ class _WebRTCVideoElementState extends State<_WebRTCVideoElement> {
       ..playsInline = true
       ..style.objectFit = _getObjectFit()
       ..style.transform = widget.mirror ? 'scaleX(-1)' : 'none';
-
+    
     _updateVideoElement();
   }
 
   void _updateVideoElement() {
     if (_videoElement == null) return;
-
+    
     _videoElement!.srcObject = widget.renderer.srcObject;
   }
 
@@ -123,12 +125,4 @@ class _WebRTCVideoElementState extends State<_WebRTCVideoElement> {
   Widget build(BuildContext context) {
     return const SizedBox.shrink(); // Placeholder for web implementation
   }
-}
-
-enum RTCVideoViewObjectFit {
-  RTCVideoViewObjectFitContain,
-  RTCVideoViewObjectFitCover,
-  RTCVideoViewObjectFitFill,
-  RTCVideoViewObjectFitScaleDown,
-  RTCVideoViewObjectFitNone,
 }

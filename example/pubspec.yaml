@@ -9,9 +9,9 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  cupertino_icons: ^1.0.8
   flutter_webrtc_fixed_v0_12_0:
     path: ../
-  cupertino_icons: ^1.0.8
 
 dev_dependencies:
   flutter_test:
