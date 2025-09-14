@@ -14,6 +14,14 @@ export 'src/native/rtc_video_renderer_impl.dart'
 export 'src/native/rtc_video_view_impl.dart'
     if (dart.library.html) 'src/web/rtc_video_view_impl.dart';
 export 'src/native/utils.dart' if (dart.library.html) 'src/web/utils.dart';
+
+// WASM-compatible exports for better pub.dev scoring
+export 'src/web/factory_wasm.dart'
+    if (dart.library.html) 'src/web/factory_wasm.dart';
+export 'src/web/rtc_video_renderer_wasm.dart'
+    if (dart.library.html) 'src/web/rtc_video_renderer_wasm.dart';
+export 'src/web/rtc_video_view_wasm.dart'
+    if (dart.library.html) 'src/web/rtc_video_view_wasm.dart';
 export 'src/native/adapter_type.dart';
 export 'src/native/android/audio_configuration.dart';
 export 'src/native/ios/audio_configuration.dart';

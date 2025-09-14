@@ -113,7 +113,9 @@ dependencies:
 - 🚀 **High Performance** - Optimized for low latency and high quality
 - 🛡️ **Secure** - Built-in encryption and security features
 - 📱 **Mobile First** - Designed with mobile devices in mind
-- 🌐 **Web Compatible** - Full support for Flutter Web
+- 🌐 **Web Compatible** - Full support for Flutter Web with WASM compatibility
+- 📦 **Swift Package Manager** - Native iOS/macOS support via SPM
+- ⚡ **Modern Web** - WASM-compatible for better performance
 
 Additional platform/OS support from the other community
 
@@ -281,6 +283,40 @@ void dispose() {
 localRenderer.srcObject = localStream;
 remoteRenderer.srcObject = remoteStream;
 ```
+
+</details>
+
+## 🌐 Web & WASM Support
+
+<details>
+<summary><strong>⚡ WASM Compatibility</strong></summary>
+
+This package includes WASM-compatible implementations for better web performance:
+
+- **Modern Web Standards**: Uses latest web APIs
+- **Better Performance**: WASM provides faster execution
+- **Future-Proof**: Ready for upcoming web technologies
+- **Automatic Fallback**: Gracefully falls back to standard web implementation
+
+</details>
+
+<details>
+<summary><strong>📦 Swift Package Manager Support</strong></summary>
+
+Native iOS/macOS support via Swift Package Manager:
+
+```swift
+// Add to your Package.swift
+dependencies: [
+    .package(url: "https://github.com/boughdiri-dorsaf/flutter_webrtc_fixed_v0.12.0.git", from: "0.12.0")
+]
+```
+
+**Benefits:**
+- **Native Integration**: Direct Swift/Objective-C integration
+- **Better Performance**: Optimized for iOS/macOS
+- **Modern Tooling**: Works with Xcode's modern build system
+- **Dependency Management**: Clean dependency resolution
 
 </details>
 
